@@ -25,7 +25,7 @@ Resourcecontainers
 | where type == 'microsoft.resources/subscriptions'
 | project subscriptionId, subscriptionName = name) on subscriptionId
 | project subscriptionName, subscriptionId, resourceGroup, name, location, addressSpaces
-| order by subscriptionName asc, location asc``
+| order by subscriptionName asc, location asc
 ```
 
 ## Get all route tables associated with subnets containing "backend" in the name
